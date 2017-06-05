@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.boss.amuletproject.MainActivity2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#455a64"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#455a64"
+                android:id="@+id/bar">
+            </ImageView>
+            <ImageView
+                android:id="@+id/btn_back2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/arrowback"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                />
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/amuletmarket"
+                android:layout_centerHorizontal="true"/>
+
+
+            <TextView
+                android:id="@+id/TabContext"
+                android:layout_width="500dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="55dp"
+                android:background="#009688"/>
+
+            <TextView
+                android:id="@+id/Name_Shop1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="55dp"
+                android:text="Name_Shop"
+                android:textColor="#ffff00"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/Name_Owner1" />
+
+            <TextView
+                android:id="@+id/Name_Owner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Name_Owner"
+                android:layout_below="@+id/MarketProfile1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="114dp" />
+
+            <TextView
+                android:id="@+id/Phone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textColor="#ffff"
+                android:textSize="12dp"
+                android:layout_alignBaseline="@+id/LogoTel1"
+                android:layout_alignBottom="@+id/LogoTel1"
+                android:layout_toEndOf="@+id/LogoTel1"
+                android:layout_marginLeft="3dp"/>
+
+
+            <ImageView
+                android:id="@+id/LogoLine1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/Phone1"
+                android:layout_toEndOf="@+id/Phone1"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/line"/>
+            <TextView
+                android:id="@+id/Line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IDLine"
+                android:textColor="#ffff"
+                android:textSize="12dp"
+                android:layout_marginLeft="3dp"
+                android:layout_toEndOf="@+id/LogoLine1"
+                android:layout_alignTop="@+id/Phone1"/>
+
+
+            <TextView
+                android:id="@+id/Facebook1"
+                android:text="Facebook"
+                android:textSize="13dp"
+                android:textColor="#ffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/LogoFacebook1"
+                android:layout_toEndOf="@+id/LogoFacebook1"
+                android:layout_marginLeft="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/MarketProfile1"
+                android:text="Market"
+                android:textColor="#ffffcc"
+                android:layout_below="@+id/Name_Shop1"
+                android:layout_alignLeft="@+id/LogoFacebook1"
+                android:layout_marginTop="5dp"/>
+            <ImageView
+                android:id="@+id/LogoTel1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/mobilephone"
+                android:layout_below="@+id/Name_Owner1"
+                android:layout_alignStart="@+id/Name_Owner1" />
+
+            <ImageView
+                android:id="@+id/LogoFacebook1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/fffffff"
+                android:layout_below="@+id/LogoLine1"
+                android:layout_alignStart="@+id/LogoTel1" />
+            <TextView
+                android:id="@+id/TabFontShop"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:background="#455a64"
+                android:layout_below="@+id/TabContext"
+                android:layout_alignParentStart="true" />
+
+            <com.loopj.android.image.SmartImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:layout_marginTop="13dp"
+                android:id="@+id/PicFontShop1"
+                android:layout_below="@+id/TabContext"
+                android:layout_centerHorizontal="true" />
+
+            <com.loopj.android.image.SmartImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/LogoShop1"
+                android:layout_marginTop="10dp"
+                android:layout_alignTop="@+id/TabContext"
+                />
+            <TextView
+                android:id="@+id/Detail_Shop1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DetailShop"
+                android:textColor="#ffff"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@+id/PicFontShop1"
+
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/Mapping1"
+                android:layout_below="@+id/Detail_Shop1"
+                android:background="@drawable/maping"
+                android:layout_alignRight="@+id/PicFontShop1"
+                android:layout_marginRight="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="แผนที่ร้าน"
+                android:textColor="#FFF"
+                android:layout_below="@+id/Mapping1"
+                android:layout_alignEnd="@+id/Mapping1"/>
+
+        </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

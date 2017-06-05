@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.boss.amuletproject.MainActivity2">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#455a64"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#455a64"
+            android:id="@+id/bar">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/btn_back1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/arrowback"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            />
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/amuletmarket"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:id="@+id/TabTop10"
+            android:layout_width="500dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/bar"
+            android:background="#009688"
+            />
+        <TextView
+            android:id="@+id/TextTabTop10"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Amulet"
+            android:layout_below="@id/bar"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <Button
+            android:id="@+id/btn_zoom"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/loupe"
+            android:textSize="5pt"
+            android:layout_below="@+id/imageAmulet1"/>
+
+        <TextView
+            android:id="@+id/TextNameLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ชื่อพระ  "
+            android:textColor="#FFF"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/btn_zoom"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:id="@+id/NameLP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NameLP"
+            android:textColor="#FFF"
+            android:layout_below="@+id/btn_zoom"
+            android:layout_marginTop="10dp"
+            android:layout_alignStart="@+id/TextNameLP"
+            android:layout_marginLeft="80dp"
+            />
+        <TextView
+            android:id="@+id/TextTemple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="วัด         "
+            android:textColor="#FFF"
+            android:layout_below="@+id/TextNameLP"
+            android:layout_marginLeft="50dp"/>
+        <TextView
+            android:id="@+id/Temple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temple"
+            android:textColor="#FFF"
+            android:layout_below="@id/NameLP"
+            android:layout_alignStart="@+id/TextTemple"
+            android:layout_marginLeft="80dp"/>
+        <TextView
+            android:id="@+id/TextGeneration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="รุ่น         "
+            android:textColor="#FFF"
+            android:layout_below="@+id/TextTemple"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:id="@+id/Generation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generation"
+            android:textColor="#FFF"
+            android:layout_below="@+id/Temple"
+            android:layout_alignStart="@+id/TextGeneration"
+            android:layout_marginLeft="80dp"/>
+        <TextView
+            android:id="@+id/TextProvince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="จังหวัด   "
+            android:textColor="#FFF"
+            android:layout_below="@+id/TextGeneration"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:id="@+id/Province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Province"
+            android:textColor="#FFF"
+            android:layout_below="@+id/Generation"
+            android:layout_alignStart="@+id/TextProvince"
+            android:layout_marginLeft="80dp"/>
+        <TextView
+            android:id="@+id/TextYearAmulet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="สร้างปี   "
+            android:textColor="#FFF"
+            android:layout_below="@+id/TextProvince"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:id="@+id/YearAmulet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YearAmulet"
+            android:textColor="#FFF"
+            android:layout_below="@+id/Province"
+            android:layout_alignStart="@+id/TextYearAmulet"
+            android:layout_marginLeft="80dp"/>
+        <TextView
+            android:id="@+id/TextType_Name_Amulet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เนื้อ        "
+            android:textColor="#FFF"
+            android:layout_below="@+id/TextYearAmulet"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:id="@+id/Type_Name_Amulet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type_Name_Amulet"
+            android:textColor="#FFF"
+            android:layout_below="@+id/YearAmulet"
+            android:layout_alignStart="@+id/TextType_Name_Amulet"
+            android:layout_marginLeft="80dp"/>
+        <TextView
+            android:id="@+id/TextOwerAmulet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ขอบคุณเจ้าของพระ "
+            android:textColor="#FFF"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/Type_Name_Amulet"/>
+        <TextView
+            android:id="@+id/Name_Owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name_Owner "
+            android:textColor="#ff0000"
+            android:layout_below="@+id/Type_Name_Amulet"
+            android:layout_marginTop="20dp"
+            android:layout_alignStart="@+id/TextOwerAmulet"
+            android:layout_marginLeft="130dp"/>
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/imageAmulet2"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_marginLeft="200dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignTop="@+id/imageAmulet1"
+            android:layout_toEndOf="@+id/YearAmulet" />
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/imageAmulet1"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="14dp"
+            android:layout_below="@+id/TabTop10"
+            android:layout_alignEnd="@+id/TextTabTop10" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

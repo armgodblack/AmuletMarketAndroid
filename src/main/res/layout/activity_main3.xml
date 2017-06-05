@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.boss.amuletproject.MainActivity">
+    tools:context="com.example.boss.amuletproject.MainActivity3">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <android.support.v4.view.ViewPager
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#455a64"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 
@@ -30,14 +27,16 @@
 
         </ImageView>
 
+        <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--app:layout_scrollFlags="scroll|enterAlways"-->
+        <!--app:popupTheme="@style/AppTheme.PopupOverlay">-->
+        <!--</android.support.v7.widget.Toolbar>-->
 
 
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tabs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#009688"
-            android:layout_below="@+id/bar"/>
 
 
         <ImageView
@@ -48,7 +47,14 @@
             android:layout_centerHorizontal="true"/>
 
 
-
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/arrowback"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            />
     </RelativeLayout>
 
 

@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.boss.amuletproject.MarketFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+     <!-- TODO: Update blank fragment layout -->
+     <android.support.v4.widget.SwipeRefreshLayout
+         android:id="@+id/refresh"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginTop="100dp">
+
+         <ListView
+             android:id="@+id/list"
+             android:choiceMode="singleChoice"
+             android:listSelector="#009688"
+             android:drawSelectorOnTop="false"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:background="#455a64"
+             android:layout_marginTop="100dp"/>
+
+     </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

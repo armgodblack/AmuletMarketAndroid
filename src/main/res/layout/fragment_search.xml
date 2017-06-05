@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#455a64"
+    tools:context="com.example.boss.amuletproject.SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/SearchBox"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:background="#FFF" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:listSelector="#009688"
+            android:drawSelectorOnTop="false"
+            android:id="@+id/ListSearch111"
+            android:layout_below="@+id/SearchBox"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+        </ListView>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

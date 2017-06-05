@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#455a64"
+    tools:context="com.example.boss.amuletproject.Top10AmuletFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TabTop10"
+            android:layout_width="500dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/TabFontShop"
+            android:layout_marginTop="100dp"
+            android:background="#009688"
+            />
+
+        <TextView
+            android:id="@+id/TextTabTop10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:text="พระเครื่องยอดนิยม"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <TextView
+            android:id="@+id/TopAmuletShop"
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:layout_below="@+id/TabTop10"
+            android:background="#4b4848"/>
+        <TextView
+            android:id="@+id/TabDateColor"
+            android:layout_width="500dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/TabTop10"
+            android:background="#009999"
+            />
+        <TextView
+            android:id="@+id/Textdatetime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:text="DateTime"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <!--**************************************-->
+        <ListView
+            android:id="@+id/listTopAmulet"
+            android:choiceMode="singleChoice"
+            android:listSelector="#009688"
+            android:drawSelectorOnTop="false"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#455a64"
+            android:layout_below="@+id/TabDateColor"/>
+
+    </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

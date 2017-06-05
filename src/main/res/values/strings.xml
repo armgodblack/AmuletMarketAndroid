@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">ListViewJSON</string>
+    <string name="app_name">AmuletProject</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_market_fragment">MarketFragment</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_main3">MainActivity3</string>
+    <string name="title_activity_map_market">Map</string>
+    <string name="title_activity_main4">Main4Activity</string>
+    <string name="title_activity_map_shop_fragment">Map</string>
+    <string name="title_activity_main5">Main5Activity</string>
 </resources>

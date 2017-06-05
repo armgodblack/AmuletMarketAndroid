@@ -1,0 +1,65 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.boss.amuletproject.ShopFragment">
+
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/TabColorTop10Shop"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        android:background="#669900"/>
+        <TextView
+            android:text="ร้านค้ายอดนิยม"
+            android:textColor="#FFF"
+            android:layout_marginLeft="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="110dp"/>
+
+        <ListView
+            android:id="@+id/list2"
+            android:choiceMode="singleChoice"
+            android:listSelector="#009688"
+            android:drawSelectorOnTop="false"
+            android:layout_width="fill_parent"
+            android:layout_height="650dp"
+            android:background="#455a64"
+            android:layout_below="@+id/TabColorTop10Shop"
+            />
+
+        <TextView
+            android:id="@+id/TabColorShop"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/list2"
+            android:background="#669900"/>
+        <TextView
+            android:text="ร้านค้าในตลาดพระ"
+            android:textColor="#FFF"
+            android:layout_marginLeft="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/list2"
+            android:layout_marginTop="10dp"/>
+    <ListView
+        android:id="@+id/list"
+        android:choiceMode="singleChoice"
+        android:listSelector="#009688"
+        android:drawSelectorOnTop="false"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:background="#455a64"
+        android:layout_below="@+id/TabColorShop"/>
+
+</RelativeLayout>
+</FrameLayout>
+</ScrollView>
